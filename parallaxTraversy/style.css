@@ -81,12 +81,12 @@ a {
 }
 
 .parallax-two {
-    background-image: url('img/kinga-cichewicz-515603-unsplash.jpg');
+    background-image: url('img/MountAiry 3.jpg');
     min-height: 400px;
 }
 
 .parallax-three {
-    background-image: url('img/mahir-uysal-304884-unsplash.jpg');
+    background-image: url('img/NewWindsor 1.jpg');
     min-height: 400px;
 }
 
@@ -132,7 +132,7 @@ a {
 
 .parallax-text .campaign-text-me {
     color: #fff;
-    padding: 20px;
+
     font-weight: 600;
 }
 
@@ -151,7 +151,7 @@ a {
     text-transform: uppercase;
     padding: 0;
     text-align: center;
-    background: linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)), url('img/earth-608366-unsplash.jpg');
+    background: url('img/Taylorsville 1.jpg');
     background-size: cover;
     background-position: center;
 }
