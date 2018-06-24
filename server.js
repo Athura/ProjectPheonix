@@ -4,7 +4,6 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 
 const users = require('./routes/api/users');
-const tickets = require('./routes/api/tickets');
 
 require('./config/passport')(passport);
 
@@ -22,8 +21,8 @@ mongoose
 
 app.use(passport.initialize());
 
+// Mounting our routes
 app.use('/api/users', users);
-app.use('/api/tickets', tickets);
 
 const port = process.env.PORT || 5000;
 
