@@ -1,7 +1,7 @@
 const HTTPStatus = require('http-status');
 const APIError = require('../errors/api-error');
 const UserService = require('../services/user-service');
-import { loadUserFromHeaders } from '../middleware/load-current-user';
+const loadUserFromHeaders = require('../middleware/load-current-user');
 
 export default {
     async createUser(req, res) {

@@ -2,13 +2,12 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const keys = require('../../config/keys');
+const keys = require('../config/keys');
 const passport = require('passport');
 const gravatar = require('gravatar');
-const wrap = require('./async-wrapper');
 
-const validateRegisterInput = require('../../validators/register');
-const validateLoginInput = require('../../validators/login');
+const validateRegisterInput = require('../validators/register');
+const validateLoginInput = require('../validators/login');
 
 // user controller
 const UserController = require('../controllers/user-controller');
