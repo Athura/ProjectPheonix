@@ -1,0 +1,8 @@
+google maps/geolocation/JS maps -- Frontend, creds stored in keys.js
+Yelp API -- Frontend, creds stored in keys.js
+
+Restaurant favorite/follow - backend
+Restaurant unfavorite/unfollow - backend
+
+User Register - backend
+User login - backend
