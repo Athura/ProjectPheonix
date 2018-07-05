@@ -28,11 +28,11 @@ Key Feature Decisions:
 -Is this a serious website, or is it really about the funny things that can happen at a fast-food joint?
 -Who will be using this site? People on roadtrips trying to choose a lunch place? Frequent fast-food visitors looking to share their experience?
 -Should this be a community where people frequently check the site for funny stories and participate? Or more one-time, infrequent use?
--What social media integration might help spread stories/reviews?
+-What social media integration might help spread stories/reviews? -Facebook login so we should implement a Share to Facebook button 
 
 What this website will demonstrate when I'm finished:
 
-User systems and picture storage are two major challenges. - Amazon s3 for photo management
+User systems and picture storage are two major challenges. - Amazon s3 for photo management, need to investigate breaking my front end and backend apart into seperate projects. Deploy one to Aamzon (backend) then one to Heroku or surge or whatever
 This will be a good chance to implement a basic version of each. 
 Also, if you choose to make this a humor-oriented site, how can your design influence an appropriate 
 level of humor that is not nasty? If you want to gain a following, 

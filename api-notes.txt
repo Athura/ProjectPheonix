@@ -6,3 +6,4 @@ Restaurant unfavorite/unfollow - backend
 
 User Register - backend
 User login - backend
+User Profile - backend
