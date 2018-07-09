@@ -5,11 +5,13 @@ const bodyParser = require('body-parser');
 
 const users = require('./routes/user-routes');
 const restaurants = require('./routes/restauraunt-routes');
+const profile = require('./routes/profile-routes');
 
 require('./config/passport')(passport);
 
 const app = express();
 
+// Body parser middleware. We use this so we can parse our request objects into json.
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -25,6 +27,7 @@ app.use(passport.initialize());
 // Mounting our routes
 app.use('/api/users', users);
 app.use('/api/restaurants', restaurants);
+app.use('/api/profile', profile);
 
 const port = process.env.PORT || 5000;
 
