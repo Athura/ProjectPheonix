@@ -1,11 +1,14 @@
 .background {
     height: 100vh;
-    background-image: url("../img/alex-robert-133575-unsplash.jpg"); 
+    background-image: url("../img/brooke-lark-500141-unsplash.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .container {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
