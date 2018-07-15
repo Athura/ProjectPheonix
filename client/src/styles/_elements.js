@@ -1,4 +1,6 @@
 import styled, { css } from 'styled-components';
+import typography from './_typography';
+import { moveInBottom, moveInLeft, moveInRight } from './_animation';
 
 export const Button = styled.button`
   border-radius: 3px;
@@ -11,12 +13,14 @@ export const Button = styled.button`
 
   position: absolute;
   left: 25%;
-  margin-left: -160px;
-  margin-top: 300px;
+  margin-left: -170px;
+  margin-top: 325px;
 
   ${props => props.primary && css`
     background: palevioletred;
     color: white;
+
+    animation: ${moveInBottom} 2s;
   `}
 `;
 
@@ -31,13 +35,15 @@ export const Header = styled.header`
     color: white;
     font-size: 100px;
     margin-bottom: 40px;
+
+    animation: ${moveInLeft} 2s;
   `}
 `
 
 export const Span = styled.span`
   position: absolute;
   left: 25%;
-  margin-left: -290px;
+  margin-left: -310px;
   margin-top: 275px;
 
   ${props => props.primary && css`
@@ -45,6 +51,8 @@ export const Span = styled.span`
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: 20px;
-    font-family: 'Lobster';
+    font-family: ${typography.main};
+
+    animation: ${moveInRight} 2s;
   `}
 `
