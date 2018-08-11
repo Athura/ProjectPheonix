@@ -1,12 +1,16 @@
-import React from 'react';
-import Header from '../Header/Header';
+import React, { Component } from 'react';
 
-const FoodDashboard = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  )
+class FoodDashboard extends Component {
+  render() {
+    return (
+      <div>
+      
+      </div>
+    )
+  }
 }
 
 export default FoodDashboard;
+
+
+

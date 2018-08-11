@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 import { Link } from "react-router-dom";
 
@@ -15,7 +14,7 @@ import landingPageStyle from "../../assets/jss/phoenix-kit-react/views/_landingP
 
 class LandingPage extends Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
     return (
       <Parallax
         filter
