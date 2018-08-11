@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-// Core Components
-import Landing from './components/landing/LandingPage';
-import FoodDashboard from './components/FoodPage/FoodDashboard';
-import Header from './components/Header/Header';
+import Landing from './components/layout/Landing';
+import NavBar from './components/core/NavBar/NavBar';
+import FoodDashboard from './components/core/FoodDashboard/FoodDashboard';
 
 class App extends Component {
   render() {
@@ -18,9 +17,10 @@ class App extends Component {
           path = "/(.+)"
           render = {() => (
             <div>
-              <Header  />
+              <NavBar />
+
               <Switch>
-                <Route path="/food" component={ FoodDashboard } />
+                <Route path="/food" components={ FoodDashboard } />
               </Switch>
             </div>
           )}
